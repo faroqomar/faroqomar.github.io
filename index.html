@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-item h3 {
+            color: #764ba2;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .contact-item strong {
+            color: #667eea;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Software Developer | Problem Solver | Tech Enthusiast</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a passionate software developer with experience in building web applications 
+                and solving complex problems. I love learning new technologies and applying them to 
+                create innovative solutions.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Experience</h2>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Programming</h3>
+                    <p>Python, Java, C++</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Frameworks</h3>
+                    <p>React, Node.js, Django</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Tools</h3>
+                    <p>Git, Docker, VS Code</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>
+                <strong>Coming Soon:</strong> Check back later to see my featured projects and accomplishments!
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> your.email@example.com
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong> github.com/faroqomar
+                </div>
+                <div class="contact-item">
+                    <strong>Location:</strong> Your City, Country
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
